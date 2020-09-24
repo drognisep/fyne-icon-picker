@@ -50,7 +50,7 @@ func (t *tappableIcon) Tapped(e *fyne.PointEvent) {
 	)
 	copyOnConfirmCallback := func(accepted bool) {
 		if accepted {
-			t.window.Clipboard().SetContent("theme." + t.Text)
+			t.window.Clipboard().SetContent("theme." + t.Text + "()")
 		}
 	}
 	dialog.NewCustomConfirm(t.Text, "Copy", "Cancel", content, copyOnConfirmCallback, t.window)
@@ -71,7 +71,7 @@ func newTappableLabel(text string, window fyne.Window) *tappableLabel {
 }
 
 func (t *tappableLabel) Tapped(e *fyne.PointEvent) {
-	t.window.Clipboard().SetContent("theme." + t.Text)
+	t.window.Clipboard().SetContent("theme." + t.Text + "()")
 	if confirmCopyDialog == nil {
 		confirmCopyDialog = dialog.NewInformation("Copied", "Copied constant to clipboard", t.window)
 	}
