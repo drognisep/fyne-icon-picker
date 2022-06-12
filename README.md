@@ -1,6 +1,13 @@
 # fyne-icon-picker
 An interactive icon picker. The options are generated from those included in the theme package of fyne.
 
+> **Note:**
+> As much as I would enjoy continuing to work on this, it's based on Fyne.
+> Fyne (among others) has made some great strides toward bringing GUI possibilities to Go, but in my opinion it has a long way to go to be production ready.
+> 
+> I'll be excited when that happens, but in the meantime I will be marking this repo as archived.
+> I hope this will help to clarify the level of time I'm willing to devote to Fyne-based projects at this time.
+
 The motivation was two-fold:
 1. I wanted an interactive experience that allowed me to preview the icons I was including in my fyne UI code.
 1. I didn't want such a tool to be hard to use or maintain.
